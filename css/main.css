@@ -93,21 +93,116 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
 
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+}
 
+#top {
+  border-top: 3px solid black;
+  background: url("../img/background.png");
+  width: 100%;
+  height: 624px;
+}
 
+header {
+  position: relative;
+  height: 100px;
+}
 
+#logo {
+  position: absolute;
+  top: 33px;
+  background: url("../img/logo.png");
+  width: 355px;
+  height: 46px;
+  display: inline-block;
+}
 
+#social {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  background: url("../img/social-box.png");
+  height: 37px;
+  width: 116px;
+}
 
+.social {
+  position: absolute;
+  height: 24px;
+  width: 57px;
+  top: 7px;
+}
 
+#fb {
+  background: url("../img/facebook.png") 35px center no-repeat;
+  border-right: 1px solid rgba(255, 255, 255, .3);
+  left: 0;
+}
 
+#twitter {
+  background: url("../img/twitter.png") 7px 6px no-repeat;
+  right: 0;
+}
 
+nav {
+  position: absolute;
+  right: 0px;
+  top: 72px;
+}
 
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+nav > ul > li {
+  display: inline-block;
+  width: 60px;
+}
 
+nav > ul > li:after {
+  content: "/";
+  position: relative;
+  left: 10px;
+  color: rgba(255, 255, 255, .3);
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
 
+nav > ul > li:last-child:after {
+  content: "";
+}
 
+#blurb {
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  width: 765px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #FFFFCC;
+}
+
+.container > .title {
+  position: absolute;
+  color: red;
+}
 
 /* ==========================================================================
    Helper classes
