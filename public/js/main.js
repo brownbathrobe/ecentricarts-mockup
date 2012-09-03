@@ -1,8 +1,4 @@
 $(function () {
-  $(".slide .learn-more").on('click', function () {
-    alert("LEARN MORE")
-  })
-
   $("#controls li").on('click', function (e) {
     var slideNo = $(this).data("slide")
     $("#controls li").removeClass("active")

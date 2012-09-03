@@ -254,12 +254,6 @@ nav li a:hover {
   left: 0px;
 }
 
-.slide .placeholder {
-  font: bold 14px 'Droid Sans', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 #slide-1 {
   opacity: 1;
   z-index: 5;
@@ -303,9 +297,12 @@ nav li a:hover {
   background: white;
 }
 
-.slide img {
+.slide .slide-pic {
   float: left;
   margin: 10px;
+  height: 339px;
+  width: 616px;
+  background-color: rgba(0,0,0,.3);
 }
 
 .slide .slide-info {
@@ -337,6 +334,7 @@ nav li a:hover {
   cursor: pointer;
   background: url("../img/buttons.png") -10px -10px no-repeat;
   margin-top: 25px;
+  display: block;
 }
 
 .learn-more:active {
