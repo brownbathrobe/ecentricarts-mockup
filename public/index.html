@@ -28,37 +28,45 @@
             <div id="logo"></div>
             <nav>
               <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </nav>
             <section id="social">
-              <div id="fb" class="social"><a href="http://www.facebook.com" target="blank"></a></div>
-              <div id="twitter" class="social"><a href="http://www.twitter.com" target="blank"></a></div>
+              <a id="fb" class="social" href="http://www.facebook.com/ecentricarts" target="blank"></a>
+              <a id="twitter" class="social" href="http://twitter.com/ecentricarts" target="blank"></a>
             </section>
           </header>
 
-          <section>
-            <div id="blurb">
-              <p>We are a digital-focused service company that provides <span class="highlight">strategic, creative</span> and <span class="highlight">technical</span> services with artisinal precision and care.</p>
-            </div>
-          </section>
+          <div class="divider"></div>
+
+          <h1 id="blurb">We are a digital-focused service company that provides <span class="highlight">strategic, creative</span> and <span class="highlight">technical</span> services with &nbsp;artisanal precision and care.</h1>
 
           <section>
-            <!-- <h4>New and Noteworthy</h4> -->
+            <h4 id="new-and-noteworthy" class="line-through">New and Noteworthy</h4>
             <section id="slides">
-              <div class="slide-fg">
-                <div id="slide-1" class="slide">
-                  <img src="img/hero1.png" />
-                  <div class="text">
-                    <p class="title">Munk Debates</p>
-                    <p>We helped scuplt the columns that support the Munk forum for debate</p>
-                    <p>Building a platform to support the combined intellectual weight of Henry Kissinger, Tony Blair, Christopher Hitchens. Building a platform to support the combined intellectual weight of Henry Kissinger, Tony Blair, Christopher Hitchens.</p>
-                  </div>
+              <div id="slide-1" class="slide">
+                <img src="img/slide1.png" />
+                <div class="slide-info">
+                  <p class="title">Munk Debates</p>
+                  <p class="highlight">We helped scuplt the columns that support the Munk forum for debate</p>
+                  <p>Building a platform to support the combined intellectual weight of Henry Kissinger, Tony Blair, Christopher Hitchens. Building a platform to support the combined intellectual weight of Henry Kissinger, Tony Blair, Christopher Hitchens.</p>
+                  <div class="learn-more"></div>
                 </div>
               </div>
+              <div id="slide-2" class="slide">
+                <h3 class="placeholder">slide 2</h3>
+              </div>
+              <div id="slide-3" class="slide">
+                <h3 class="placeholder">slide 3</h3>
+              </div>
+              <ul id="controls">
+                <li class="active" data-slide="1"></li>
+                <li data-slide="2"></li>
+                <li data-slide="3"></li>
+              </ul>
             </section>
           </section>
         </div>
@@ -67,41 +75,55 @@
       <section id="bottom">
         <div class="container">
           <section id="pictures">
-            <h4 class="title">We are driven by a belief that every user experience should <span class="highlight">engage</span>, <span class="highlight">enrich</span> and <span class="highlight">enlighten</span></h4>
+            <h4 id="we-are-driven" class="title line-through">We are driven by a belief that every user experience should <span class="highlight">engage</span>, <span class="highlight">enrich</span> and <span class="highlight">enlighten</span></h4>
             <ul id="cards">
               <li id="left">
-                <img src="img/left.png" />
+                <a href="#blog-1">
+                  <div class="overlay">
+                    <span class="secret">Read More in Our <span class="highlight">Blog</span></span>
+                  </div>
+                  <img src="img/left.png" />
+                </a>
                 <div class="text">
-                  <h4 class="title">We devote ourselves to our craft</h4>
+                  <h4 class="heading">We devote ourselves to our craft</h4>
                   <p>We've been lovingly crafting websites for over 11 years and we've learned a thing or two along the way.</p>
                 </div>
               </li>
               <li id="middle">
-                <img src="img/middle.png" />
+                <a href="#blog-2">
+                  <div class="overlay">
+                    <span class="secret">Read More in Our <span class="highlight">Blog</span></span>
+                  </div>
+                  <img src="img/middle.png" />
+                </a>
                 <div class="text">
-                  <h4 class="title">Our work speaks volumes</h4>
+                  <h4 class="heading">Our work speaks volumes</h4>
                   <p>We love working with clients to help ensure their success in the digital world - and the proof is in the pixels.</p>
                 </div>
               </li>
               <li id="right">
-                <img src="img/right.png" />
+                <a href="#blog-3">
+                  <div class="overlay">
+                    <span class="secret">Read More in Our <span class="highlight">Blog</span></span>
+                  </div>
+                  <img src="img/right.png" />
+                </a>
                 <div class="text">
-                  <h4 class="title">We share useful and useable advice</h4>
+                  <h4 class="heading">We share useful and useable advice</h4>
                   <p>We're lucky to work with the knowledge of exceptional artisans and we like to share our riches.</p>
                 </div>
               </li>
             </ul>
           </section>
-          <section id="bag-of-tricks">
-            <h4 class="title">In our bag of tricks</h4>
-            <p>Our Service offerings go from laying digital foundations to detailed pixel decoration, from strategy to project design, build, deployment and maintenance, as required.</p>
+          <section id="tricks">
+            <h4 id="bag-of-tricks" class="title line-through">In our bag of tricks</h4>
+            <p id="our-service">Our <span class="highlight">Service</span> offerings go from laying digital foundations to detailed pixel decoration, from strategy to project design, build, deployment and maintenance, as required.</p>
             <div id="services">
               <div id="description">
                 <span>Leveraging our unique blend of creative, technical, communications and business expertise, ecentricarts <span class="highlight">designs</span> and <span class="highlight">develops</span> digital solutions that are engaging and highly functional, and meet your organization's needs and objectives.</span>
               </div>
               <div id="lists">
-                <span class="our-services">Our services include:</span>
-                </br>
+                <p class="our-services">Our services include:</p>
                 <ul id="strategy-list">
                   <li class="title">Strategy</li>
                   <li class="ticked">Competitive analysis</li>
@@ -141,10 +163,10 @@
           <nav>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>

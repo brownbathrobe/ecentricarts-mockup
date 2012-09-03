@@ -93,14 +93,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-  font-family: 'Georgia', serif;
-  background-color: #AECB9F;
-}
-
 a, a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #AECB9F;
 }
 
 #wrapper {
@@ -110,11 +110,9 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   position: relative;
-/*  border-bottom: 1px solid rgba(0, 0, 0, .3);
-  border-top: 1px solid rgba(255, 255, 255, .3);*/
 }
 
 #top {
@@ -142,7 +140,7 @@ header {
 
 #social {
   position: absolute;
-  right: 0;
+  right: -15px;
   top: -4px;
   background: url("../img/social-box.png");
   height: 37px;
@@ -154,12 +152,6 @@ header {
   width: 40px;
   height: 24px;
   top: 7px;
-}
-
-.social a {
-  height: 100%;
-  width: 100%;
-  display: block;
 }
 
 #fb {
@@ -181,6 +173,7 @@ nav {
 
 header nav {
   font-family: 'Droid Sans', sans-serif;
+  right: -15px;
 }
 
 ul {
@@ -210,38 +203,144 @@ nav > ul > li:last-child:after {
   content: "";
 }
 
+nav li a {
+  -webkit-transition: .1s color;
+     -moz-transition: .1s color;
+       -o-transition: .1s color;
+          transition: .1s color;
+}
+
+nav li a:hover {
+  color: white;
+  -webkit-transition: .1s color;
+     -moz-transition: .1s color;
+       -o-transition: .1s color;
+          transition: .1s color;
+}
+
 #blurb {
-  font-size: 22px;
-  font-family: 'Droid Sans', sans-serif;
+  font: 22px 'Droid Sans', sans-serif;
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
   width: 765px;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
+  line-height: 1.5;
 }
 
 .highlight {
   color: #FFFFCC;
 }
 
-#slides {
-  height: 340px;
-  border: 1px solid black;
-  padding: 10px;
-  background: url("../img/slide_bg.png");
+#new-and-noteworthy {
+  font: bold 14px 'Droid Sans', sans-serif;
+  text-shadow: 1px 1px #D9E6CB;
+  margin-bottom: 10px;
 }
 
-.slide-fg {
-  background-color: rgba(255, 255, 255, .5);
+#slides {
+  height: 360px;
+  width: 100%;
+  background: url("../img/slide_bg.png");
+  position: relative;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.slide .placeholder {
+  font: bold 14px 'Droid Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#slide-1 {
+  opacity: 1;
+  z-index: 5;
+}
+
+#slide-2 {
+  background: #CCCC99;
+}
+
+#slide-3 {
+  background: #AECB9F;
+}
+
+#controls {
+  position: absolute;
+  z-index: 5;
+  bottom: 10px;
+  right: 230px;
+  cursor: default;
+}
+
+#controls li {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background: #7C8582;
+  border-radius: 20px;
+  margin: 0 2px;
+  cursor: pointer;
+  -webkit-transition: .2s all;
+     -moz-transition: .2s all;
+       -o-transition: .2s all;
+          transition: .2s all;
+}
+
+#controls .active {
+  background: white;
+}
+
+#controls li:hover {
+  background: white;
 }
 
 .slide img {
   float: left;
+  margin: 10px;
 }
 
-.slide .text {
+.slide .slide-info {
   float: right;
-  width: 300px;
+  width: 280px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+  margin-right: 10px;
+}
+
+.slide .title {
+  font: 20px 'Droid Sans';
+  text-shadow: 0 1px #1A2624;
+  opacity: 1;
+}
+
+.slide .highlight {
+  font-size: 16px;
+}
+
+.slide-info p {
+  opacity: .8;
+}
+
+.slide .learn-more {
+  width: 107px;
+  height: 32px;
+  cursor: pointer;
+  background: url("../img/buttons.png") -10px -10px no-repeat;
+  margin-top: 25px;
+}
+
+.learn-more:active {
+  background-position:-8px -50px;
 }
 
 #bottom {
@@ -249,7 +348,7 @@ nav > ul > li:last-child:after {
   padding: 20px 0 67px;
 }
 
-#pictures .highlight {
+#we-are-driven .highlight {
   color: #5E9741;
 }
 
@@ -273,38 +372,130 @@ nav > ul > li:last-child:after {
   color: #666666;
 }
 
+#cards a {
+  display: block;
+}
+
+#cards .overlay {
+  position: absolute;
+  height: 147px;
+  width: 299px;
+  background-color: rgba(0,0,0,.6);
+  opacity: 0;
+  -webkit-transition: .2s all;
+     -moz-transition: .2s all;
+       -o-transition: .2s all;
+          transition: .2s all;
+}
+
+#cards .overlay:hover {
+  opacity: 1;
+}
+
+.overlay .secret {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 165px;
+  margin: 56px auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: rgba(0,0,0, .5);
+  opacity: .8;
+}
+
+.overlay .secret .highlight {
+  color: #99CC33;
+  font-style: italic;
+}
+
 #cards .text {
   padding: 15px;
   font-size: 14px;
 }
 
 #middle {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 17px;
 }
 
-#bag-of-tricks {
+.divider {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.line-through {
+  position: relative;
+  text-align: center;
+}
+
+.line-through:before, .line-through:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  top: 10px;
+}
+
+.line-through:before {
+  left: 0;
+}
+
+.line-through:after {
+  right: 0;
+}
+
+#new-and-noteworthy:before, #new-and-noteworthy:after {
+  width: 375px;
+  top: 8px;
+}
+
+#bag-of-tricks:before, #bag-of-tricks:after {
+  width: 375px;
+}
+
+#we-are-driven:before, #we-are-driven:after {
+  width: 130px;
+}
+
+#tricks {
   border-bottom: 1px solid #CDCDCD;
 }
 
+#our-service {
+  margin: 0 auto;
+  width: 670px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
 #description {
-  width: 190px;
+  width: 189px;
   display: inline-block;
   padding: 10px;
   background-color: #EFEFEF;
   height: 254px;
   vertical-align: top;
   border-right: 1px solid #CDCDCD;
+  font-size: 12px;
+  line-height: 2;
 }
 
 #description .highlight {
-  color: #5E9741;
   font-style: italic;
+}
+
+#tricks .highlight {
+  color: #5E9741;
 }
 
 #lists {
   display: inline-block;
-  margin-left: 35px;
+  margin: 13px 0 0 35px;
+  font-size: 12px;
 }
 
 #services {
@@ -314,36 +505,45 @@ nav > ul > li:last-child:after {
 }
 
 .our-services {
+  font-weight: bold;
   font-style: italic;
   color: #999999;
+  margin: 0 0 8px;
 }
 
 #lists ul {
-  width: 220px;
+  width: 185px;
   height: 225px;
   display: inline-block;
   vertical-align: top;
   position: relative;
+  margin-right: 45px;
 }
 
-.title {
+#lists ul:last-child {
+  margin-right: 0;
+}
+
+.title, .heading {
   font-family: 'Droid Sans', sans-serif;
+  font-size: 15px;
 }
 
 #lists li.title {
   font-weight: bold;
+  margin-bottom: 6px;
 }
 
 #lists li.ticked {
   background: url("../img/tick.png") no-repeat center left;
-  padding: 5px 0 5px 30px;
+  padding: 8px 0 8px 30px;
+  font-size: 12px;
 
 }
 
 #lists li.learn-more {
   position: absolute;
-  bottom: 0;
-  margin-top: 20px;
+  bottom: 5px;
   color: #5E9741;
 }
 
