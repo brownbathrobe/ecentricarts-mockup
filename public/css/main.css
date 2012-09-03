@@ -97,6 +97,11 @@ body {
   font-family: 'Georgia', serif;
 }
 
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 #wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -105,6 +110,7 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  position: relative;
 /*  border-bottom: 1px solid rgba(0, 0, 0, .3);
   border-top: 1px solid rgba(255, 255, 255, .3);*/
 }
@@ -143,26 +149,36 @@ header {
 
 .social {
   position: absolute;
+  width: 40px;
   height: 24px;
-  width: 57px;
   top: 7px;
 }
 
+.social a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 #fb {
-  background: url("../img/facebook.png") 35px center no-repeat;
+  background: url("../img/facebook.png") 19px center no-repeat;
   border-right: 1px solid rgba(255, 255, 255, .3);
-  left: 0;
+  left: 18px;
 }
 
 #twitter {
-  background: url("../img/twitter.png") 7px 6px no-repeat;
-  right: 0;
+  background: url("../img/twitter.png") center 6px no-repeat;
+  right: 18px;
 }
 
 nav {
   position: absolute;
   right: 0px;
   top: 72px;
+}
+
+header nav {
+  font-family: 'Droid Sans', sans-serif;
 }
 
 ul {
@@ -172,15 +188,18 @@ ul {
 }
 
 nav > ul > li {
-  font-family: 'Droid Sans', sans-serif;
   display: inline-block;
-  width: 60px;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 nav > ul > li:after {
   content: "/";
-  position: relative;
-  left: 10px;
+  position: absolute;
+  right: -3px;
   color: rgba(255, 255, 255, .3);
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
 }
@@ -337,6 +356,25 @@ footer {
   color: white;
   height: 100px;
   padding-top: 25px;
+  position: relative;
+  font: bold 12px 'Georgia', serif;
+}
+
+.legal {
+  color: #CCCCCC;
+}
+
+footer nav {
+  top: 3px;
+  color: #FFFFCC;
+}
+
+footer nav li {
+  padding: 0 20px;
+}
+
+footer nav li:after {
+  right: -4px;
 }
 
 /* ==========================================================================
