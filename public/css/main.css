@@ -94,7 +94,7 @@ textarea {
    ========================================================================== */
 
 body {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Georgia', serif;
 }
 
 #wrapper {
@@ -105,8 +105,8 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, .3);
-  border-top: 1px solid rgba(255, 255, 255, .3);
+/*  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);*/
 }
 
 #top {
@@ -172,6 +172,7 @@ ul {
 }
 
 nav > ul > li {
+  font-family: 'Droid Sans', sans-serif;
   display: inline-block;
   width: 60px;
 }
@@ -190,6 +191,7 @@ nav > ul > li:last-child:after {
 
 #blurb {
   font-size: 22px;
+  font-family: 'Droid Sans', sans-serif;
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
   width: 765px;
@@ -223,6 +225,7 @@ nav > ul > li:last-child:after {
 
 #bottom {
   background-color: #EFEFEF;
+  padding: 20px 0 67px;
 }
 
 #pictures .highlight {
@@ -257,6 +260,83 @@ nav > ul > li:last-child:after {
 #middle {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+#bag-of-tricks {
+  border-bottom: 1px solid #CDCDCD;
+}
+
+#description {
+  width: 190px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #EFEFEF;
+  height: 254px;
+  vertical-align: top;
+  border-right: 1px solid #CDCDCD;
+}
+
+#description .highlight {
+  color: #5E9741;
+  font-style: italic;
+}
+
+#lists {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+#services {
+  padding: 13px 10px;
+  background-color: white;
+  height: 274px;
+}
+
+.our-services {
+  font-style: italic;
+  color: #999999;
+}
+
+#lists ul {
+  width: 220px;
+  height: 225px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.title {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#lists li.title {
+  font-weight: bold;
+}
+
+#lists li.ticked {
+  background: url("../img/tick.png") no-repeat center left;
+  padding: 5px 0 5px 30px;
+
+}
+
+#lists li.learn-more {
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  color: #5E9741;
+}
+
+#lists li.learn-more:before {
+  content: "\00BB \0000a0";
+  color: black;
+}
+
+footer {
+  box-shadow: 0 -5px 30px -17px rgba(0, 0, 0, .8);
+  background-color: black;
+  color: white;
+  height: 100px;
+  padding-top: 25px;
 }
 
 /* ==========================================================================
