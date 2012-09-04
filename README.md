@@ -1,4 +1,3 @@
-Ecentricarts mockup
-====================
+## [Ecentricarts mockup](http://ecentricarts-mockup.herokuapp.com/) ##
 
-Mockup for a job interview...
+Mock-up test for a job interview...
