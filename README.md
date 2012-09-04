@@ -1,2 +1,4 @@
-eccentricarts mockup
+Ecentricarts mockup
 ====================
+
+Mockup for a job interview...
